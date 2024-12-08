@@ -34,6 +34,10 @@ public class Post {
 
     public Post(String author, String summary, String details,
                 boolean resolved) {
+        this.author = author;
+        this.summary = summary;
+        this.details = details;
+        this.resolved = resolved;
 
     }
     //endregion
@@ -88,6 +92,8 @@ public class Post {
     public static boolean unitTests() { 
         // example test case: tests correctness of default constructor. 
         Post post = new Post();
+        Post postnew = new Post("Roi" , " my first summary" , "details" , true);
+        System.out.println(postnew.author + postnew.summary);
         if (post.author != null || post.summary != null ||
                 post.details != null || post.resolved != false) {
             return false;
