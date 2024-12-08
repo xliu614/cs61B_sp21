@@ -25,6 +25,10 @@ public class Post {
 
     //region Constructors
     public Post() {
+        this.author = null;
+        this.summary = null;
+        this.details = null;
+        this.resolved = false;
 
     }
 
