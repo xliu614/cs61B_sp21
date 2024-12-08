@@ -11,6 +11,7 @@
 // TODO: Class Header
 public class Post {
 
+    //region Private Properties
     // Instance variables for Post
     private String author;
     private String summary;
@@ -20,6 +21,7 @@ public class Post {
     // Formatted string for toString()
     private final static String FORMATTED_STRING = "Author:\t%s\n" +
         "Summary:\t%s\n" + "Details:\t%s\n" + "Resolved?:\t%b\n";
+    //endregion
 
     // TODO: Method Header
     public Post() {
