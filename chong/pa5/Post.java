@@ -23,16 +23,16 @@ public class Post {
         "Summary:\t%s\n" + "Details:\t%s\n" + "Resolved?:\t%b\n";
     //endregion
 
-    // TODO: Method Header
+    //region Constructors
     public Post() {
 
     }
 
-    // TODO: Method Header
-    public Post(String author, String summary, String details, 
-            boolean resolved) {
-        
+    public Post(String author, String summary, String details,
+                boolean resolved) {
+
     }
+    //endregion
 
     // TODO: Method Header
     public String getAuthor() {
