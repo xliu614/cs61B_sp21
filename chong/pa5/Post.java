@@ -44,42 +44,40 @@ public class Post {
 
     // TODO: Method Header
     public String getAuthor() {
-        return null;
+        return this.author;
     }
 
     // TODO: Method Header
-    public String getSummary() {
-        return null;
-    }
+    public String getSummary() {return this.summary;}
 
     // TODO: Method Header
     public String getDetails() {
-        return null;
+        return this.details;
     }
 
     // TODO: Method Header
     public boolean isResolved() {
-        return false;
+        return this.resolved;
     }
 
     // TODO: Method Header
     public void setAuthor(String author) {
-
+        this.author = author;
     }
 
     // TODO: Method Header
     public void setSummary(String summary) {
-
+        this.summary = summary;
     }
 
     // TODO: Method Header
     public void setDetails(String details) {
-
+        this.details = details;
     }
 
     // TODO: Method Header
     public void setResolved(boolean resolved) {
-
+        this.resolved = resolved;
     }
 
     // TODO: Method Header
@@ -93,12 +91,17 @@ public class Post {
         // example test case: tests correctness of default constructor. 
         Post post = new Post();
         Post postnew = new Post("Roi" , " my first summary" , "details" , true);
-        System.out.println(postnew.author + postnew.summary);
+//        postnew.setAuthor("Vivianne");
+//        System.out.println(postnew.getSummary());
+//        System.out.println(postnew.author + postnew.summary);
         if (post.author != null || post.summary != null ||
                 post.details != null || post.resolved != false) {
             return false;
         }
-
+        if (postnew.getAuthor() == null || postnew.getSummary() == null || postnew.getDetails() == null || !postnew.isResolved() ||
+                postnew.getAuthor().isEmpty() || postnew.getSummary().isEmpty() || postnew.getDetails().isEmpty()) {
+            return false;
+        }
         return true;
     }
 
