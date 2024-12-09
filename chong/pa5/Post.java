@@ -81,10 +81,11 @@ public class Post {
     }
 
     // TODO: Method Header
+    @Override
     public String toString() {
-        return null;
+        return String.format(FORMATTED_STRING, this.author, this.summary, this.details, this.resolved);
     }
-    
+
     // TODO: Method Header
     @SuppressWarnings("checkstyle:MagicNumber") // DO NOT CHANGE THIS LINE!!!
     public static boolean unitTests() { 
@@ -102,6 +103,7 @@ public class Post {
                 postnew.getAuthor().isEmpty() || postnew.getSummary().isEmpty() || postnew.getDetails().isEmpty()) {
             return false;
         }
+        System.out.println(postnew.toString());
         return true;
     }
 
